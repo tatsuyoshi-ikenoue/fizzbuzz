@@ -42,17 +42,17 @@ $ git clone git@github.com:cancerscan/fizzbuzz.git
 ### 2. チュートリアル用の仮のmasterブランチを作成する
 ```
 $ cd fizzbuzz
-$ git branch master/your_name
+$ git branch master_your_name
 ```
 
 ### 3. 仮のmasterブランチへ移動する
 ```
-$ git checkout master/your_name
+$ git checkout master_your_name
 ```
 
 ### 4. 仮のmasterブランチをリモートリポジトリにpushする
 ```
-$ git push origin master/your_name
+$ git push origin master_your_name
 ```
 
 ### 5. 仮のmasterブランチからトピックブランチを作成する
@@ -83,12 +83,21 @@ $ git commit -m "Your commit message"
 
 ### 2. 変更内容をリモートリポジトリにpushする
 ```
-$ git push feature/fizzbuzz_your_name
+$ git push
+```
+次のエラーが表示された場合はエラー内容のとおりに上流ブランチを設定する
+```
+$ git push
+fatal: The current branch feature/fizzbuzz_your_name has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin feature/fizzbuzz_your_name
+$ git push --set-upstream origin feature/fizzbuzz_your_name
 ```
 
 ### 3. Pull Requestの作成
 - [New pull request]
-- [base: master/your_name] <- [compare: feature/fizzbuzz_your_name]
+- [base: master_your_name] <- [compare: feature/fizzbuzz_your_name]
 - [Create pull request]
 - [Reviewers] -> レビュアーを選択
 - Pull Requestのタイトル, 本文を入力する
