@@ -25,9 +25,9 @@ $ chmod 600 ~/.ssh/id_rsa
 $ cat ~/.ssh/id_rsa.pub | pbcopy
 ```
 ### 5. GitHubに公開鍵を登録する
-- [Settings] -> [SSH and GPG keys] -> [New GPG key]
+- [Settings] -> [SSH and GPG keys] -> [New SSH key]
 - テキストエリアにペーストする
-- [Add GPG key]
+- [Add SSH key]
 
 ## 作業用ブランチの作成
 
