@@ -35,3 +35,5 @@ def fizzbuzz(n):
 
 if __name__ == '__main__':
     doctest.testmod()
+    for n in range(100):
+        print(fizzbuzz(n))
